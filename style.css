@@ -18,3 +18,92 @@
     font-style: normal;
     font-size: 25px;
 }
+
+.sidebar-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    height: 100%;
+    display: flex;
+    padding: 20px;
+    transform: translateX(-75%);
+    transition: transform 350ms ease-in;
+}
+
+.sidebar-menu:hover {
+    transform: translateX(0%);
+}
+
+.sidebar-menu:hover .menu-text {
+    opacity: 0;
+}
+
+.menu-item {
+    list-style: none;
+
+}
+
+.menu-item:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.menu-link {
+    color: black;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+}
+
+.menu-link::before {
+    content: "";
+    display: inline-block;
+    transform: rotate(45deg);
+    width: 8px;
+    height: 8px;
+    border: 1px solid black;
+    background-color: orangered;
+}
+
+.menu-link:hover {
+    color: orangered;
+}
+
+.menu-text {
+    writing-mode: vertical-rl;
+    text-align: center;
+    font-size: 24px;
+    margin-left: 25px;
+    opacity: 1;
+    transition: opacity 300ms ease-in;
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+}
+
+
+.menu-box {
+    margin-top: 40px;
+}
+
+.kyiv {
+    font-family: "Tiny5", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.summer {
+    font-family: "Tiny5", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.spa {
+    font-family: "Tiny5", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
